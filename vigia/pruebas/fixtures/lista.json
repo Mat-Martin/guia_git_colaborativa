@@ -1,0 +1,11 @@
+{
+  "normas": [
+    { "id": "ley-1000", "idNorma": 101 },
+    { "id": "ley-2000", "idNorma": 102 },
+    { "id": "ley-3000", "idNorma": 103 },
+    { "id": "ley-4000", "idNorma": 104 },
+    { "id": "dto-ex-5-2005", "leychile": false, "nota": "Decreto exento no publicado en LeyChile." },
+    { "id": "ley-6000", "idNorma": null },
+    { "id": "ley-7000", "idNorma": 107 }
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ficha de ejemplo para las pruebas: imita la forma de la respuesta de LeyChile, no es una respuesta real. -->
+<Norma xmlns="http://www.leychile.cl/esquemas" normaId="104" fechaVersion="2004-04-04" derogado="no derogado" esTratado="no tratado">
+  <Identificador fechaPromulgacion="2000-01-01" fechaPublicacion="2000-01-02">
+    <TiposNumeros><TipoNumero><Tipo>Ley</Tipo><Numero>9999</Numero></TipoNumero></TiposNumeros>
+  </Identificador>
+  <Metadatos><TituloNorma><![CDATA[Norma de ejemplo 9999]]></TituloNorma></Metadatos>
+</Norma>

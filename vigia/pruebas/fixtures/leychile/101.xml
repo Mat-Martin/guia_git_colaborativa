@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ficha de ejemplo para las pruebas: imita la forma de la respuesta de LeyChile, no es una respuesta real. -->
+<Norma xmlns="http://www.leychile.cl/esquemas" normaId="101" fechaVersion="2015-06-30" derogado="no derogado" esTratado="no tratado">
+  <Identificador fechaPromulgacion="2000-01-01" fechaPublicacion="2000-01-02">
+    <TiposNumeros><TipoNumero><Tipo>Ley</Tipo><Numero>1000</Numero></TipoNumero></TiposNumeros>
+  </Identificador>
+  <Metadatos><TituloNorma><![CDATA[Norma de ejemplo 1000]]></TituloNorma></Metadatos>
+</Norma>
