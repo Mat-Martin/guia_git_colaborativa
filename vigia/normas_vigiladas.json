@@ -1,8 +1,8 @@
 {
   "nota": "Normas de RepoRAD que vigila el vigía. «idNorma» es el número que aparece en la dirección de la norma en LeyChile (…/navegar?idNorma=NNNN). Mientras esté en null, el informe la marca como «falta el idNorma». Si la norma no está en LeyChile, poner «leychile»: false y explicar en «nota».",
   "normas": [
-    { "id": "ley-19664", "idNorma": null },
-    { "id": "ley-20120", "idNorma": null },
-    { "id": "dto-ex-254-2012", "idNorma": null, "nota": "Decreto exento: puede no estar publicado en LeyChile. Si no está, poner «leychile»: false; su vigilancia irá por MINSAL o el Diario Oficial." }
+    { "id": "ley-19664", "idNorma": 155848 },
+    { "id": "ley-20120", "idNorma": 253478 },
+    { "id": "dto-ex-254-2012", "leychile": false, "nota": "Decreto exento: no se encontró en LeyChile (búsqueda del 30-10-2026). Su vigilancia irá por MINSAL o el Diario Oficial." }
   ]
 }
