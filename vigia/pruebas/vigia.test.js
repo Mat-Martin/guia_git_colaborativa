@@ -55,7 +55,7 @@ test("el informe pone primero lo que hay que revisar", async () => {
 
 test("un error de red no detiene la revisión", async () => {
   const caida = async () => { throw new Error("sin conexión"); };
-  await assert.rejects(leychile.consultar(1, { fetchFn: caida }), /sin conexión/);
+  await assert.rejects(leychile.consultar(1, { fetchFn: caida }), /sin conexión con LeyChile/);
   const noOk = async () => ({ ok: false, status: 503 });
   await assert.rejects(leychile.consultar(1, { fetchFn: noOk }), /503/);
 });

@@ -45,10 +45,16 @@ function analizar(xml) {
 }
 
 async function consultar(idNorma, { fetchFn = fetch, tiempoMaximo = 30000 } = {}) {
-  const respuesta = await fetchFn(urlNorma(idNorma), {
-    signal: AbortSignal.timeout(tiempoMaximo),
-    headers: { "User-Agent": "RepoRAD-vigia/0.1 (vigilancia de normativa; consulta semanal)" }
-  });
+  let respuesta;
+  try {
+    respuesta = await fetchFn(urlNorma(idNorma), {
+      signal: AbortSignal.timeout(tiempoMaximo),
+      headers: { "User-Agent": "RepoRAD-vigia/0.1 (vigilancia de normativa; consulta semanal)" }
+    });
+  } catch (e) {
+    const causa = e.cause ? e.cause.code || e.cause.message : e.message;
+    throw new Error(`sin conexión con LeyChile (${causa})`);
+  }
   if (!respuesta.ok) throw new Error(`LeyChile respondió ${respuesta.status}`);
   const xml = await respuesta.text();
   const ficha = analizar(xml);
