@@ -11,3 +11,8 @@
 2. git ASD
 3. git commit
 4. git push
+## Áreas del Departamento
+El Departamento está a cargo de 3 temas:
+- Formación de especialistas (ley médica)
+- Relación Asistencial Docente
+- Investigación en seres humanos
